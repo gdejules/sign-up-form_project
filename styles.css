@@ -1,0 +1,102 @@
+* {
+  /* outline: 2px solid grey; */
+  margin: 0;
+}
+
+:root {
+  /* layout */
+  box-sizing: border-box;
+  list-style-type: none;
+
+  /* font declaration here */
+
+  /* color declaration here */
+  --color-primary: navy;
+  --color-secondary: olive;
+  --form-color-invalid: crimson;
+  --form-color-valid: green;
+}
+
+.container {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  margin: 0 280px;
+  height: 100vh;
+  background-color: azure;
+}
+
+.images {
+  flex: 1 1 auto;
+  width: 1rem;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.image {
+  flex: 4 1 0;
+  height: 40%;
+  background-color: burlywood;
+  position: relative;
+}
+
+.image.male {
+  background: no-repeat center
+    url(https://images.unsplash.com/photo-1636682517393-405e6a3d837f?q=80&w=464&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+}
+
+.male span {
+  top: 10px;
+}
+
+.image.female {
+  background: no-repeat center
+    url(https://images.unsplash.com/photo-1661474974210-9231fac4f051?q=80&w=387&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+}
+
+.female span {
+  bottom: 10px;
+}
+
+.image span {
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  color: white;
+  font-size: 12px;
+}
+
+a {
+  color: white;
+}
+
+.logo {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: antiquewhite;
+  gap: 12px;
+}
+
+.registration {
+  flex: 3 1 auto;
+  width: 2rem;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.registration div {
+  padding: 16px 24px;
+}
+
+.form-container {
+  height: 60%;
+}
+
+.registration form {
+  display: flex;
+  gap: 36px;
+}
