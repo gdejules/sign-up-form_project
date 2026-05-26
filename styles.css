@@ -12,6 +12,7 @@ ul {
 
 :root {
   /* layout */
+  background: darkslategrey;
 
   /* font declaration here */
 
@@ -28,7 +29,7 @@ ul {
   align-items: center;
   margin: 0 280px;
   height: 100vh;
-  background-color: azure;
+  background-color: hsl(158, 63%, 87%);
 }
 
 .images {
@@ -42,7 +43,6 @@ ul {
 .image {
   flex: 4 1 0;
   height: 40%;
-  background-color: burlywood;
   position: relative;
 }
 
@@ -80,7 +80,7 @@ ul {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: antiquewhite;
+  background-color: rebeccapurple;
   gap: 12px;
 }
 
