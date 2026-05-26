@@ -29,63 +29,90 @@
         </div>
         <div class="form-container">
           <form action="" method="post">
-              <fieldset class="sign-up-form">
-                <legend>Sign-Up Form</legend>
-                  <label for="first_name">FIRST NAME</label>
-                  <input type="text" id="first_name" name="first_name" placeholder="John" required>
-                  <label for="last_name">LAST NAME</label>
-                  <input type="text" id="last_name" name="last_name" placeholder="Doe" required>
-                  <label for="mail">EMAIL</label>
-                  <input type="email" id="mail" name="user_email" placeholder="youremail@gmail.com" required>
-                  <label for="phone">PHONE NUMBER</label>
-                  <input type="tel" id="phone" name="user-phone" placeholder="081234567890" pattern="^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$">
-                  <label for="password">CREATE PASSWORD</label>
-                  <input type="password" id="password" name="user_password" required>
-                  <label for="confirm_password">CONFIRM PASSWORD</label>
-                  <input type="password" id="confirm_password" name="user_password" required>
+              <fieldset>
+                <legend>Sign-up form</legend>
+                  <section class="sign-up-form">
+                    <section class="left section">
+                      <label for="first_name">FIRST NAME</label>
+                      <input type="text" id="first_name" name="first_name" placeholder="John" required>
+                      <label for="mail">EMAIL</label>
+                      <input type="email" id="mail" name="user_email" placeholder="youremail@gmail.com" required>
+                      <label for="password">CREATE PASSWORD</label>
+                      <input type="password" id="password" name="user_password" required>
+                    </section>
+                    <section class="right section">
+                      <label for="last_name">LAST NAME</label>
+                      <input type="text" id="last_name" name="last_name" placeholder="Doe" required>
+                      <label for="phone">PHONE NUMBER</label>
+                      <input type="tel" id="phone" name="user-phone" placeholder="081234567890" pattern="^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$">
+                      <label for="confirm_password">CONFIRM PASSWORD</label>
+                      <input type="password" id="confirm_password" name="user_password" required>
+                    </section>
+                  </section>
               </fieldset>
-              <fieldset class="gender">
-                <legend>SELECT GENDER</legend>
-                <ul>
-                  <li>
-                    <label for="male">Male</label>
-                    <input type="radio" id="male" name="gender" value="male">
-                  </li>
-                  <li>
-                    <label for="female">Female</label>
-                    <input type="radio" id="female" name="gender" value="female">
-                  </li>
-                </ul>
-              </fieldset>
-              <legend>CHOOSE TOURNAMENT CATEGORY</legend>
-                <select name="category" id="category">
-                  <option value="beginner-single">Beginner Single</option>
-                  <option value="beginner-double">Beginner Double</option>
-                  <option value="beginner-mix-double">Beginner Mix Double</option>
-                  <option value="intermediate-single">Intermediate Single</option>
-                  <option value="intermediate-double">Intermediate Double</option>
-                  <option value="intermediate-mix-double">Intermediate Mix Double</option>
-                </select>
-                <fieldset>
-                  <legend>SELECT SKILL LEVEL</legend>
-                  <label for="beginner">Beginner</label>
-                  <input type="radio" id="beginner" name="level" value="beginner">
-                  <label for="upper-beginner">Upper Beginner</label>
-                  <input type="radio" id="upper-beginner" name="level" value="upper-beginner">
-                  <label for="intermediate">Intermediate</label>
-                  <input type="radio" id="intermediate" name="level" value="intermediate">
-                  <label for="upper-intermediate">Upper Intermediate</label>
-                  <input type="radio" id="upper-intermediate" name="level" value="upper-intermediate">
+              <section class="second-row">
+                <fieldset class="gender">
+                  <legend>Select gender</legend>
+                  <ul>
+                    <li>
+                      <input type="radio" id="male" name="gender" value="male">
+                      <label for="male">Male</label>
+                    </li>
+                    <li>
+                      <input type="radio" id="female" name="gender" value="female" checked>
+                      <label for="female">Female</label>
+                    </li>
+                  </ul>
                 </fieldset>
-                <fieldset>
-                  <legend>PREFERABLE COURT (MAY CHOOSE MORE THAN ONE)</legend>
-                  <label for="sanur">Liga Tennis Sanur</label>
-                  <input type="checkbox" id="sanur" name="court" value="sanur">
-                  <label for="umalas">Liga Tennis Umalas</label>
-                  <input type="checkbox" id="umalas" name="court" value="umalas">
-                  <label for="ubud">Liga Tennis Ubud</label>
-                  <input type="checkbox" id="ubud" name="court" value="ubud">
+                <fieldset class="category">
+                  <legend>Choose category</legend>
+                    <select name="category" id="category">
+                      <option value="beginner-single">Beginner Single</option>
+                      <option value="beginner-double">Beginner Double</option>
+                      <option value="beginner-mix-double">Beginner Mix Double</option>
+                      <option value="intermediate-single" selected>Intermediate Single</option>
+                      <option value="intermediate-double">Intermediate Double</option>
+                      <option value="intermediate-mix-double">Intermediate Mix Double</option>
+                    </select>
                 </fieldset>
+              </section>
+                <section class="third-row">
+                  <fieldset class="level">
+                    <legend>Select skill level</legend>
+                    <label class="form-control" for="beginner">
+                      <input type="radio" id="beginner" name="level" value="beginner">
+                      Beginner
+                    </label>
+                    <label class="form-control" for="upper-beginner">
+                      <input type="radio" id="upper-beginner" name="level" value="upper-beginner">
+                      Upper Beginner
+                    </label>
+                    <label class="form-control" for="intermediate">
+                      <input type="radio" id="intermediate" name="level" value="intermediate" checked>
+                      Intermediate
+                    </label>
+                    <label  class="form-control" for="upper-intermediate">
+                      <input type="radio" id="upper-intermediate" name="level" value="upper-intermediate">
+                      Upper Intermediate
+                    </label>
+                  </fieldset>
+                  <fieldset class="court">
+                    <legend>Choose court (may choose more than one)</legend>
+                    <label class="form-control" for="sanur">
+                      <input type="checkbox" id="sanur" name="court" value="sanur" checked>
+                      Liga Tennis Sanur
+                    </label>
+                    <label class="form-control" for="umalas">
+                      <input type="checkbox" id="umalas" name="court" value="umalas">
+                      Liga Tennis Umalas
+                    </label>
+                    <label class="form-control" for="ubud">
+                      <input type="checkbox" id="ubud" name="court" value="ubud">
+                      Liga Tennis Ubud
+                    </label>
+                  </fieldset>
+                </section>
+                <button type="submit">Submit</button>
           </form>
       </div>
     </div>

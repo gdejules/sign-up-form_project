@@ -1,12 +1,17 @@
 * {
   /* outline: 2px solid grey; */
   margin: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
 :root {
   /* layout */
-  box-sizing: border-box;
-  list-style-type: none;
 
   /* font declaration here */
 
@@ -65,10 +70,9 @@
   position: absolute;
   color: white;
   font-size: 12px;
-}
-
-a {
-  color: white;
+  a {
+    color: white;
+  }
 }
 
 .logo {
@@ -92,12 +96,64 @@ a {
   padding: 16px 24px;
 }
 
-.form-container {
-  height: 60%;
-}
-
 .form-container form {
   display: flex;
   flex-direction: column;
-  gap: 36px;
+  gap: 16px;
+}
+
+fieldset {
+  padding: 12px 0;
+  border: 0;
+}
+
+.sign-up-form {
+  display: flex;
+  align-items: start;
+  gap: 24px;
+}
+
+.sign-up-form section {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+.section input {
+  margin-bottom: 16px;
+  width: 200px;
+}
+
+.second-row,
+.third-row {
+  display: flex;
+  align-items: start;
+  gap: 24px;
+}
+
+section fieldset {
+  width: 200px;
+}
+
+.gender ul {
+  display: flex;
+  gap: 16px;
+  width: 200px;
+}
+
+.level,
+.court {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 16px;
+}
+
+.form-control {
+  display: flex;
+  gap: 8px;
+}
+
+button {
+  width: 120px;
 }
