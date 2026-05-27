@@ -373,3 +373,12 @@ button {
   border-radius: 4px;
   border: 1px solid lightgray;
 }
+
+/* validation style */
+.section input:user-invalid {
+  border: 1px solid var(--form-color-invalid);
+}
+
+.section input:user-valid {
+  border: 1px solid var(--form-color-valid);
+}
