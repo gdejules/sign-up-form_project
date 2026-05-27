@@ -15,7 +15,7 @@
         </div>
         <div class="logo">
             <img src="images/Steren_Tennis_ball.svg" width="56" alt="tennis community logo">
-          <span>Playtime</span>
+          <span>Playtime <span>Community</span></span>
         </div>
         <div class="image female">
           <span>Photo by <a href="https://unsplash.com/@gasparzaldo?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">gaspar zaldo</a> on <a href="https://unsplash.com/photos/a-woman-hitting-a-ball-with-a-tennis-racket-XyeaNpKUJyk?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
@@ -23,44 +23,60 @@
         </div>
       </div>
       <div class="registration">
-        <div class="form-title"><h1>Tennis Competition</h1></div>
+        <div class="form-title"><h1>Playtime Tennis Competition</h1></div>
         <div class="description">
-          <p>Sign up to compete in our tennis competition!</p>
+          <p>This is just a fictional tennis competition for recreational players in beginner and intermediate level. Sign up to join the tournament if you are not a Playtime member.</p>
         </div>
         <div class="form-container">
-          <form action="" method="post">
-              <fieldset>
-                <legend>Sign-up form</legend>
-                  <section class="sign-up-form">
-                    <section class="left section">
-                      <label for="first_name">FIRST NAME</label>
+          <form action="" method="post">  
+              <section class="first-row">
+                <fieldset class="sign-up-form">
+                  <legend>Sign-up form</legend>
+                  <section class="left section">
+                    <label for="first_name">
+                      FIRST NAME
                       <input type="text" id="first_name" name="first_name" placeholder="John" required>
-                      <label for="mail">EMAIL</label>
+                    </label>
+                    <label for="mail">
+                      EMAIL
                       <input type="email" id="mail" name="user_email" placeholder="youremail@gmail.com" required>
-                      <label for="password">CREATE PASSWORD</label>
+                    </label>
+                    <label for="password">
+                      CREATE PASSWORD
                       <input type="password" id="password" name="user_password" required>
-                    </section>
-                    <section class="right section">
-                      <label for="last_name">LAST NAME</label>
-                      <input type="text" id="last_name" name="last_name" placeholder="Doe" required>
-                      <label for="phone">PHONE NUMBER</label>
-                      <input type="tel" id="phone" name="user-phone" placeholder="081234567890" pattern="^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$">
-                      <label for="confirm_password">CONFIRM PASSWORD</label>
-                      <input type="password" id="confirm_password" name="user_password" required>
-                    </section>
+                    </label>
                   </section>
-              </fieldset>
+                  <section class="right section">
+                    <label for="last_name">
+                      LAST NAME
+                      <input type="text" id="last_name" name="last_name" placeholder="Doe" required>
+                    </label>
+                    <label for="phone">
+                      PHONE NUMBER
+                      <input type="tel" id="phone" name="user-phone" placeholder="081234567890" pattern="^[\+]?[([0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$">
+                    </label>
+                    <label for="confirm_password">
+                      CONFIRM PASSWORD
+                      <input type="password" id="confirm_password" name="user_password" required>
+                    </label>
+                  </section>
+                </fieldset>
+              </section>
               <section class="second-row">
                 <fieldset class="gender">
                   <legend>Select gender</legend>
                   <ul>
                     <li>
-                      <input type="radio" id="male" name="gender" value="male">
-                      <label for="male">Male</label>
+                      <label for="male">
+                        <input type="radio" id="male" name="gender" value="male">
+                        Male
+                      </label>
                     </li>
                     <li>
-                      <input type="radio" id="female" name="gender" value="female" checked>
-                      <label for="female">Female</label>
+                      <label for="female">
+                        <input type="radio" id="female" name="gender" value="female" checked>
+                        Female
+                      </label>
                     </li>
                   </ul>
                 </fieldset>
@@ -112,7 +128,10 @@
                     </label>
                   </fieldset>
                 </section>
-                <button type="submit">Submit</button>
+                <section class="fourth-row">
+                  <button type="submit">SUBMIT</button>
+                  <span>Already a Playtime member? <a href="">Sign In</a></span>
+                </section>
           </form>
       </div>
     </div>
